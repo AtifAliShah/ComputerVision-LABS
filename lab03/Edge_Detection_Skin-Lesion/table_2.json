@@ -1,0 +1,38 @@
+[
+  {
+    "Configuration": "Canny-1",
+    "Low Threshold": 30,
+    "High Threshold": 100,
+    "Kernel Size": "3\u00d73",
+    "Edge Quality": "Noisy/Cluttered",
+    "Number of Detected Edges": 4531,
+    "Observation": "Detects weak edges and micro-textures; skin pores and hair shafts appear as false edges."
+  },
+  {
+    "Configuration": "Canny-2",
+    "Low Threshold": 50,
+    "High Threshold": 150,
+    "Kernel Size": "3\u00d73",
+    "Edge Quality": "Optimal / Clean",
+    "Number of Detected Edges": 1079,
+    "Observation": "Strong lesion contour boundary with excellent continuity; noise and background texture suppressed."
+  },
+  {
+    "Configuration": "Canny-3",
+    "Low Threshold": 100,
+    "High Threshold": 200,
+    "Kernel Size": "3\u00d73",
+    "Edge Quality": "Fragmented",
+    "Number of Detected Edges": 27,
+    "Observation": "Misses subtle boundary gradients; boundary line breaks into disconnected segments."
+  },
+  {
+    "Configuration": "Canny-4",
+    "Low Threshold": 50,
+    "High Threshold": 150,
+    "Kernel Size": "5\u00d75",
+    "Edge Quality": "Coarse / Smooth",
+    "Number of Detected Edges": 105,
+    "Observation": "5x5 smoothing eliminates fine hair artifacts and minor texture; boundary slightly rounded."
+  }
+]

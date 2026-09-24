@@ -1,0 +1,57 @@
+[
+  {
+    "Model / Classifier": "SVM",
+    "Accuracy Raw (Lab 1)": "0.1538",
+    "Accuracy Filtered (Lab 2)": "0.1538",
+    "Accuracy Edge (Lab 3)": "0.2308",
+    "Precision": "0.0839",
+    "Recall": "0.2308",
+    "F1-Score": "0.1231",
+    "Training Time (s)": "0.015",
+    "Inference Time (ms)": "0.56"
+  },
+  {
+    "Model / Classifier": "Random Forest",
+    "Accuracy Raw (Lab 1)": "0.0769",
+    "Accuracy Filtered (Lab 2)": "0.0769",
+    "Accuracy Edge (Lab 3)": "0.0769",
+    "Precision": "0.0641",
+    "Recall": "0.0769",
+    "F1-Score": "0.0699",
+    "Training Time (s)": "0.443",
+    "Inference Time (ms)": "0.55"
+  },
+  {
+    "Model / Classifier": "KNN",
+    "Accuracy Raw (Lab 1)": "0.1538",
+    "Accuracy Filtered (Lab 2)": "0.1538",
+    "Accuracy Edge (Lab 3)": "0.0000",
+    "Precision": "0.0000",
+    "Recall": "0.0000",
+    "F1-Score": "0.0000",
+    "Training Time (s)": "0.003",
+    "Inference Time (ms)": "1.85"
+  },
+  {
+    "Model / Classifier": "CNN Model 1",
+    "Accuracy Raw (Lab 1)": "0.2308",
+    "Accuracy Filtered (Lab 2)": "0.3077",
+    "Accuracy Edge (Lab 3)": "0.2308",
+    "Precision": "0.0769",
+    "Recall": "0.2308",
+    "F1-Score": "0.1154",
+    "Training Time (s)": "0.947",
+    "Inference Time (ms)": "2.17"
+  },
+  {
+    "Model / Classifier": "CNN Model 2",
+    "Accuracy Raw (Lab 1)": "0.2308",
+    "Accuracy Filtered (Lab 2)": "0.1538",
+    "Accuracy Edge (Lab 3)": "0.3846",
+    "Precision": "0.1479",
+    "Recall": "0.3846",
+    "F1-Score": "0.2137",
+    "Training Time (s)": "30.293",
+    "Inference Time (ms)": "16.56"
+  }
+]

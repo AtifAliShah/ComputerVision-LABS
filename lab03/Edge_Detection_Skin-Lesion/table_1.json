@@ -1,0 +1,101 @@
+[
+  {
+    "Edge Detector": "Sobel",
+    "Input Image": "Original",
+    "Noise Type": "None",
+    "Preprocessing": "None",
+    "Edge Quality": "High",
+    "Noise Sensitivity": "Moderate",
+    "Observations": "Clear continuous boundary of the lesion, clean background with minimal spurious responses."
+  },
+  {
+    "Edge Detector": "Sobel",
+    "Input Image": "Noisy",
+    "Noise Type": "Gaussian",
+    "Preprocessing": "None",
+    "Edge Quality": "Poor",
+    "Noise Sensitivity": "High",
+    "Observations": "Gradient responds severely to pixel intensity fluctuations; granular false edges throughout."
+  },
+  {
+    "Edge Detector": "Sobel",
+    "Input Image": "Noisy",
+    "Noise Type": "Salt & Pepper",
+    "Preprocessing": "None",
+    "Edge Quality": "Very Poor",
+    "Noise Sensitivity": "Extreme",
+    "Observations": "Salt-and-pepper impulses produce prominent high-gradient rings and false edge artifacts."
+  },
+  {
+    "Edge Detector": "Sobel",
+    "Input Image": "Noisy",
+    "Noise Type": "Gaussian",
+    "Preprocessing": "Gaussian Filter",
+    "Edge Quality": "Good",
+    "Noise Sensitivity": "Low",
+    "Observations": "Gaussian smoothing suppresses high-frequency Gaussian noise; lesion boundary is preserved."
+  },
+  {
+    "Edge Detector": "Sobel",
+    "Input Image": "Noisy",
+    "Noise Type": "Salt & Pepper",
+    "Preprocessing": "Median Filter",
+    "Edge Quality": "Good",
+    "Noise Sensitivity": "Low",
+    "Observations": "Median filter completely eliminates isolated salt/pepper impulses, restoring clean edge contours."
+  },
+  {
+    "Edge Detector": "Prewitt",
+    "Input Image": "Original",
+    "Noise Type": "None",
+    "Preprocessing": "None",
+    "Edge Quality": "Good",
+    "Noise Sensitivity": "Moderate",
+    "Observations": "Uniform weights produce slightly softer edges than Sobel, but strong boundary localization."
+  },
+  {
+    "Edge Detector": "Laplacian",
+    "Input Image": "Original",
+    "Noise Type": "None",
+    "Preprocessing": "None",
+    "Edge Quality": "Moderate",
+    "Noise Sensitivity": "Very High",
+    "Observations": "Second derivative is unconstrained; double-edge effect and high sensitivity to faint texture."
+  },
+  {
+    "Edge Detector": "LoG",
+    "Input Image": "Noisy",
+    "Noise Type": "Gaussian",
+    "Preprocessing": "Gaussian Filter",
+    "Edge Quality": "Moderate/Good",
+    "Noise Sensitivity": "Moderate",
+    "Observations": "Initial Gaussian smoothing attenuates noise before second derivative zero-crossing detection."
+  },
+  {
+    "Edge Detector": "Canny",
+    "Input Image": "Original",
+    "Noise Type": "None",
+    "Preprocessing": "Built-in smoothing",
+    "Edge Quality": "Excellent",
+    "Noise Sensitivity": "Low",
+    "Observations": "Single-pixel-thin, continuous edges; non-maximum suppression ensures high sharpness and zero clutter."
+  },
+  {
+    "Edge Detector": "Canny",
+    "Input Image": "Noisy",
+    "Noise Type": "Gaussian",
+    "Preprocessing": "Gaussian Filter",
+    "Edge Quality": "Very Good",
+    "Noise Sensitivity": "Low",
+    "Observations": "Dual Gaussian attenuation preserves authentic lesion outline with virtually no false edges."
+  },
+  {
+    "Edge Detector": "Canny",
+    "Input Image": "Noisy",
+    "Noise Type": "Salt & Pepper",
+    "Preprocessing": "Median Filter",
+    "Edge Quality": "Very Good",
+    "Noise Sensitivity": "Low",
+    "Observations": "Nonlinear median ranking strips impulse spikes; hysteresis thresholding links genuine edges."
+  }
+]

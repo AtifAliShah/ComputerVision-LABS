@@ -1,0 +1,47 @@
+[
+  {
+    "Image": "Image 1",
+    "Diagnosis": "Melanoma (MEL)",
+    "ISIC_ID": "ISIC_0000013",
+    "Best Filter": "Gaussian (5x5, sigma=1.6)",
+    "Edge Method": "Canny (50-100)",
+    "Area (pixels)": 1629.5,
+    "Perimeter (pixels)": 535.1
+  },
+  {
+    "Image": "Image 2",
+    "Diagnosis": "Melanocytic Nevus (NV)",
+    "ISIC_ID": "ISIC_0000021",
+    "Best Filter": "Gaussian (5x5, sigma=1.6)",
+    "Edge Method": "Canny (50-100)",
+    "Area (pixels)": 884.5,
+    "Perimeter (pixels)": 177.5
+  },
+  {
+    "Image": "Image 3",
+    "Diagnosis": "Basal Cell Carcinoma (BCC)",
+    "ISIC_ID": "ISIC_0024403",
+    "Best Filter": "Gaussian (5x5, sigma=1.6)",
+    "Edge Method": "Canny (50-100)",
+    "Area (pixels)": 3297.5,
+    "Perimeter (pixels)": 515.8
+  },
+  {
+    "Image": "Image 4",
+    "Diagnosis": "Pigmented Benign Keratosis (BKL)",
+    "ISIC_ID": "ISIC_0024612",
+    "Best Filter": "Gaussian (5x5, sigma=1.6)",
+    "Edge Method": "Canny (50-100)",
+    "Area (pixels)": 755.5,
+    "Perimeter (pixels)": 153.1
+  },
+  {
+    "Image": "Image 5",
+    "Diagnosis": "Vascular Lesion (VASC)",
+    "ISIC_ID": "ISIC_0027210",
+    "Best Filter": "Gaussian (5x5, sigma=1.6)",
+    "Edge Method": "Canny (50-100)",
+    "Area (pixels)": 1208.0,
+    "Perimeter (pixels)": 412.1
+  }
+]

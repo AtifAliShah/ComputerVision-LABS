@@ -1,0 +1,58 @@
+[
+  {
+    "Method": "Original + Sobel",
+    "Noise Handling": "Poor (Pores, hairs, and fine surface texture generate heavy noise)",
+    "Edge Quality": "Thick, diffuse edges with severe noise clutter",
+    "Boundary Detection": "Inadequate; lesion perimeter is obscured by dermal texture noise",
+    "Overall Performance": "Poor"
+  },
+  {
+    "Method": "Original + Canny",
+    "Noise Handling": "Fair (Hysteresis suppresses isolated noise, but preserves micro-texture)",
+    "Edge Quality": "Thin 1-pixel edges, but heavily cluttered across epidermal furrows",
+    "Boundary Detection": "Fragmented; texture edges interfere with main perimeter closure",
+    "Overall Performance": "Moderate"
+  },
+  {
+    "Method": "Average + Sobel",
+    "Noise Handling": "Moderate (Box filter reduces fine noise uniformly)",
+    "Edge Quality": "Over-smoothed edges with significant spatial displacement",
+    "Boundary Detection": "Imprecise; subtle pigment margins are blurred away",
+    "Overall Performance": "Fair"
+  },
+  {
+    "Method": "Average + Canny",
+    "Noise Handling": "Good (Box blur suppresses high-frequency dermal noise)",
+    "Edge Quality": "Sharp edges, minor boundary position drift",
+    "Boundary Detection": "Good; detects general contour with occasional perimeter gaps",
+    "Overall Performance": "Good"
+  },
+  {
+    "Method": "Gaussian + Sobel",
+    "Noise Handling": "Good (Gaussian weighting suppresses noise while preserving edges)",
+    "Edge Quality": "Continuous gradient response, but lacks non-maximum suppression",
+    "Boundary Detection": "Fair to Good; requires empirical threshold calibration",
+    "Overall Performance": "Good"
+  },
+  {
+    "Method": "Gaussian + Canny",
+    "Noise Handling": "Optimal (Gaussian filtering + dual-threshold hysteresis tracking)",
+    "Edge Quality": "Superior; strictly thin, non-maximum suppressed sharp edges",
+    "Boundary Detection": "Superior; forms coherent, well-localized closed boundary",
+    "Overall Performance": "Best (Benchmark)"
+  },
+  {
+    "Method": "Median + Sobel",
+    "Noise Handling": "Very Good (Non-linear filter removes hair and specular noise)",
+    "Edge Quality": "Sharp step-edge preservation without gradient smearing",
+    "Boundary Detection": "Good; robust against hair artifacts and specular reflections",
+    "Overall Performance": "Very Good"
+  },
+  {
+    "Method": "Median + Canny",
+    "Noise Handling": "Excellent (Exceptional hair and specular artifact rejection)",
+    "Edge Quality": "Thin, crisp edges with minimal false positive responses",
+    "Boundary Detection": "Excellent; highly accurate boundary delineation",
+    "Overall Performance": "Excellent (Alternative)"
+  }
+]

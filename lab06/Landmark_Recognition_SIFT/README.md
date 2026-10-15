@@ -1,19 +1,35 @@
 # Lab 06: Landmark Recognition Using SIFT Algorithm
 
-**Student:** Atif Ali Shah  
+[![Student ID](https://img.shields.io/badge/Student%20ID-FA23--BAI--004-blue)](https://github.com/AtifAliShah)
+[![Student](https://img.shields.io/badge/Student-Atif%20Ali%20Shah-darkblue)](https://github.com/AtifAliShah)
+[![Repository](https://img.shields.io/badge/Repository-ComputerVision--LABS-teal)](https://github.com/AtifAliShah/ComputerVision-LABS)
+[![Course](https://img.shields.io/badge/Course-Computer%20Vision-blueviolet)](https://github.com/AtifAliShah/ComputerVision-LABS)
+[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue?logo=python)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5.0.0-green?logo=opencv)](https://opencv.org/)
+
+**Student Name:** Atif Ali Shah  
 **Student ID:** FA23-BAI-004  
 **Course:** Computer Vision  
 **Parent Repository:** [ComputerVision-LABS](https://github.com/AtifAliShah/ComputerVision-LABS)  
+**Module:** `lab06/Landmark_Recognition_SIFT`  
 
 ---
 
-## Overview
+## 1. Overview & Objectives
 
-This module implements a complete landmark recognition and geometric verification pipeline using SIFT feature extraction, Brute-Force KNN matching ($k=2$), Lowe's ratio test ($0.75$), and RANSAC homography estimation.
+This laboratory module implements an automated landmark recognition and geometric localization application using:
+- **Scale-Invariant Feature Transform (SIFT):** Detecting DoG scale-space extrema and extracting 128-D orientation histograms.
+- **Brute-Force Matcher with Euclidean Distance:** Finding the top $k=2$ nearest neighbors per descriptor.
+- **Lowe's Ratio Test ($	au = 0.75$):** Eliminating false/ambiguous correspondences.
+- **RANSAC Homography Estimation:** Estimating planar projective transformation, performing geometric validation (convexity, non-degenerate area, positive determinant), and projecting the bounding polygon around the recognized landmark.
+- **Automated Rejection Gate:** Rejection of non-database queries (e.g., Big Ben).
 
-### Benchmark Summary
-| Condition | Ground Truth | Predicted | Matches | Inliers | Decision | Latency |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+---
+
+## 2. Experimental Benchmark Results
+
+| Condition | Ground Truth | Predicted Landmark | Query KPs | Matches | Inliers | Decision | Latency |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Original Landmark Image** | `eiffel_tower` | `eiffel_tower` | `2,946` | `2,946` | `2,946` | **RECOGNIZED** | `986.8 ms` |
 | **Rotated Landmark Image (45 deg)** | `eiffel_tower` | `eiffel_tower` | `2,517` | `1,234` | `1,227` | **RECOGNIZED** | `801.7 ms` |
 | **Resized Landmark Image (0.5x Scale)** | `eiffel_tower` | `eiffel_tower` | `672` | `509` | `508` | **RECOGNIZED** | `236.6 ms` |
@@ -21,7 +37,37 @@ This module implements a complete landmark recognition and geometric verificatio
 | **Different Viewpoint Image** | `eiffel_tower` | `eiffel_tower` | `1,020` | `1,020` | `1,020` | **RECOGNIZED** | `377.4 ms` |
 | **Non-Database Landmark (Big Ben)** | `unknown` | `Unknown / Rejected` | `1,984` | `22` | `0` | **REJECTED** | `666.9 ms` |
 
-### Execution
+---
+
+## 3. Visual Results Gallery
+
+### Task 1: Landmark Reference Database
+Multi-angle reference gallery containing the 5 target landmarks:
+![Reference Database](figures/task1_reference_database.png)
+
+### Task 2: SIFT Keypoints & Orientation Field
+Difference-of-Gaussians (DoG) keypoints rendered with scale circles and gradient orientation rays:
+![SIFT Keypoints](figures/task2_sift_features.png)
+
+### Task 4: Feature Matching & Non-Database Rejection
+Side-by-side matching pairs comparing genuine match under rotation vs rejection of an unknown landmark (Big Ben):
+![Feature Matching Comparison](figures/task4_feature_matching_comparison.png)
+
+### Task 5 & 6: Environmental Robustness & Geometric Localization Matrix
+Comprehensive 6-condition test matrix showing localized bounding polygons and rejection banners:
+![Environmental Evaluation](figures/task6_environmental_evaluation.png)
+
+### Benchmark Telemetry
+![Benchmark Telemetry](figures/task6_benchmark_telemetry.png)
+
+---
+
+## 4. Execution Instructions
+
 ```bash
+# Navigate to lab06 directory
+cd lab06/Landmark_Recognition_SIFT
+
+# Run the complete experimental pipeline
 python run_lab06.py
 ```

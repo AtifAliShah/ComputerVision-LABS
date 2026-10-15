@@ -8,3 +8,5 @@ Computer Vision Laboratory Works and Assignments.
 - **Lab 03:** [Edge Detection Techniques and Their Impact on Classification Performance](lab03/Edge_Detection_Skin-Lesion/)
 - **Lab 04:** [Skin Lesion Boundary Detection Using Canny Edge Detection](lab04/Boundary_Detection_Skin-Lesion/)
 - **Lab 05:** [HOG-Based Industrial Defect Detection and Classification](lab05/HOG_Industrial_Defect_Detection/)
+
+| **Lab 06** | [Landmark Recognition Using SIFT](lab06/Landmark_Recognition_SIFT) | SIFT, KNN k=2, Lowe's Ratio Test, RANSAC Homography, Localization |

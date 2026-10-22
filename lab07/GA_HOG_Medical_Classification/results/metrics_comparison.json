@@ -1,0 +1,72 @@
+{
+    "student": "Atif Ali Shah",
+    "dataset": "BloodMNIST",
+    "seed": 77,
+    "n_classes": 4,
+    "class_names": [
+        "Neutrophil",
+        "Eosinophil",
+        "Lymphocyte",
+        "Monocyte"
+    ],
+    "n_total_features": 2304,
+    "n_selected_features": 464,
+    "reduction_pct": 79.86,
+    "best_ga_setting": "Setting 1 (High-Accuracy GA: Pop=30, alpha=0.90)",
+    "baseline_metrics": {
+        "accuracy": 92.65,
+        "precision_macro": 92.8,
+        "recall_macro": 92.65,
+        "macro_f1": 92.58,
+        "weighted_f1": 92.6,
+        "balanced_accuracy": 92.65,
+        "specificity_macro": 97.55,
+        "cohen_kappa": 0.902,
+        "matthews_corrcoef": 0.9025,
+        "latency_ms": 0.215
+    },
+    "proposed_metrics": {
+        "accuracy": 98.53,
+        "precision_macro": 98.6,
+        "recall_macro": 98.53,
+        "macro_f1": 98.51,
+        "weighted_f1": 98.52,
+        "balanced_accuracy": 98.53,
+        "specificity_macro": 99.51,
+        "cohen_kappa": 0.9804,
+        "matthews_corrcoef": 0.9806,
+        "latency_ms": 0.044
+    },
+    "improvements": {
+        "accuracy": 5.88,
+        "precision_macro": 5.8,
+        "recall_macro": 5.88,
+        "macro_f1": 5.93,
+        "weighted_f1": 5.92,
+        "balanced_accuracy": 5.88,
+        "specificity_macro": 1.96,
+        "cohen_kappa": 0.0784,
+        "matthews_corrcoef": 0.0781,
+        "latency_speedup_x": 4.89
+    },
+    "ga_setting1": {
+        "name": "Setting 1 (High-Accuracy GA: Pop=30, alpha=0.90)",
+        "pop_size": 30,
+        "mutation_rate": 0.05,
+        "crossover": "Uniform",
+        "selection": "Tournament",
+        "alpha": 0.9,
+        "best_fitness": 0.952,
+        "final_features": 464
+    },
+    "ga_setting2": {
+        "name": "Setting 2 (High-Sparsity GA: Pop=40, alpha=0.72)",
+        "pop_size": 40,
+        "mutation_rate": 0.07,
+        "crossover": "Two-Point",
+        "selection": "Tournament",
+        "alpha": 0.72,
+        "best_fitness": 0.921,
+        "final_features": 380
+    }
+}

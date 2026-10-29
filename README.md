@@ -14,3 +14,4 @@ Computer Vision Laboratory Works and Assignments.
 - **Lab 04:** [Skin Lesion Boundary Detection Using Canny Edge Detection](lab04/Boundary_Detection_Skin-Lesion/)
 - **Lab 05:** [HOG-Based Industrial Defect Detection and Classification](lab05/HOG_Industrial_Defect_Detection/)
 - **Lab 06:** [Landmark Recognition and Geometric Localization Using SIFT](lab06/Landmark_Recognition_SIFT/)
+- **Lab Mid:** [HOG vs SIFT on Blood-Cell Images](lab-mid/HOG_vs_SIFT_BloodCells/)

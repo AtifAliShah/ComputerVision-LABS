@@ -6,7 +6,7 @@ Computer Vision Laboratory Works and Assignments.
 **Student ID:** FA23-BAI-004  
 **Degree:** BS Artificial Intelligence  
 
-## 📂 Laboratory Modules
+## 📁 Laboratory Modules
 
 - **Lab 01:** [Skin Lesions Classification](lab01/Skin_Lesions_Classification/)
 - **Lab 02:** [Image Filtering on Skin-Lesion Classification](lab02/Image_Filtering_Skin-Lesion/)
@@ -16,3 +16,4 @@ Computer Vision Laboratory Works and Assignments.
 - **Lab 06:** [Landmark Recognition and Geometric Localization Using SIFT](lab06/Landmark_Recognition_SIFT/)
 - **Lab 07:** [Improving HOG-Based Medical Image Classification Using a Genetic Algorithm](lab07/GA_HOG_Medical_Classification/)
 - **Lab Mid:** [HOG vs SIFT on Blood-Cell Images](lab-mid/HOG_vs_SIFT_BloodCells/)
+- **Lab 09:** [Psychological State Analysis Using Multimodal AI](lab09/)

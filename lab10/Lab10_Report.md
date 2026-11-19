@@ -6,7 +6,7 @@
 **Degree Program:** BS Artificial Intelligence  
 **Institution:** Department of Computer Science & Artificial Intelligence  
 **Repository:** [AtifAliShah/ComputerVision-LABS](https://github.com/AtifAliShah/ComputerVision-LABS)  
-**Deliverable Path:** `Lab10/Lab10_Report.md`  
+**Deliverable Path:** `lab10/Lab10_Report.md`  
 
 ---
 

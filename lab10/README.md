@@ -5,7 +5,7 @@
 **Student ID:** FA23-BAI-004  
 **Degree:** BS Artificial Intelligence  
 **Repository:** [AtifAliShah/ComputerVision-LABS](https://github.com/AtifAliShah/ComputerVision-LABS)  
-**Lab Folder:** [Lab10](https://github.com/AtifAliShah/ComputerVision-LABS/tree/main/Lab10)  
+**Lab Folder:** [lab10](https://github.com/AtifAliShah/ComputerVision-LABS/tree/main/lab10)  
 
 ---
 
@@ -52,7 +52,7 @@ All six algorithms solve the exact same regression task: predicting continuous C
 
 ## 📁 Repository Structure
 ```text
-Lab10/
+lab10/
 │
 ├── Lab10_Regression_Comparison.ipynb    # Fully executed, reproducible Jupyter Notebook
 ├── README.md                            # Complete lab overview & execution instructions
@@ -85,7 +85,7 @@ Lab10/
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/AtifAliShah/ComputerVision-LABS.git
-   cd ComputerVision-LABS/Lab10
+   cd ComputerVision-LABS/lab10
    ```
 
 2. **Create and activate a virtual environment (recommended):**

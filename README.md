@@ -17,3 +17,4 @@ Computer Vision Laboratory Works and Assignments.
 - **Lab 07:** [Improving HOG-Based Medical Image Classification Using a Genetic Algorithm](lab07/GA_HOG_Medical_Classification/)
 - **Lab Mid:** [HOG vs SIFT on Blood-Cell Images](lab-mid/HOG_vs_SIFT_BloodCells/)
 - **Lab 09:** [Psychological State Analysis Using Multimodal AI](lab09/)
+- **Lab 10:** [Comparative Implementation of Machine Learning Regression Algorithms](lab10/README.md)
